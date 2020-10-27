@@ -1,0 +1,13 @@
+-T
+"C:/Users/nxf60347/worksapceS32DS_3_migration/S32K3EVB_S32DS3p3_PIT_ADC_eMIOS_LED/Project_Settings/Linker_Files/S32K314_flash.ld"
+-Wl,-Map,"S32K3EVB_S32DS3p3_PIT_ADC_eMIOS_LED.map"
+-Xlinker
+--gc-sections
+-n
+-mcpu=cortex-m7
+-specs=nosys.specs
+--sysroot="C:/NXP/S32DS.3.3/S32DS/build_tools/gcc_v9.2/gcc-9.2-arm32-eabi/arm-none-eabi/newlib"
+"./Project_Settings/Startup_Code/boot_header.o"
+"./Project_Settings/Startup_Code/startup_ARMCM7.o"
+"./Project_Settings/Startup_Code/system_ARMCM7.o"
+"./src/main.o"
